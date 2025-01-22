@@ -1,7 +1,8 @@
 ---
 title: "Resume"
+layout: archive
 category: manuscripts
+author_profile: true
 permalink: /cv/
-slidesurl: 'http://gnguyen2.github.io/files/Resume2.pdf'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
+resumeurl: 'http://gnguyen2.github.io/files/Resume2.pdf'
 ---
