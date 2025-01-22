@@ -38,5 +38,5 @@ Let's Connect
 I am always eager to collaborate on exciting projects or discuss innovative ideas. Feel free to reach out via:
 - **Email:** [giaba6a2@gmail.com](mailto:giaba6a2@gmail.com)
 - **LinkedIn:** [linkedin.com/in/gia-nguyen-053594246](https://linkedin.com/in/gia-nguyen-053594246)
-
+- **Resume:** [GiaNguyenResume](https://gnguyen2.github.io/cv/)
 Thank you for taking the time to learn more about me. I look forward to connecting!
