@@ -26,7 +26,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 # Portfolio
 
-Welcome to my portfolio — a curated selection of projects that reflect my passion for full-stack development, AI, and problem-solving in real-world scenarios.
+Welcome to my portfolio ï¿½ a curated selection of projects that reflect my passion for full-stack development, AI, and problem-solving in real-world scenarios.
 
 ---
 
@@ -63,7 +63,7 @@ Welcome to my portfolio — a curated selection of projects that reflect my passio
 
 ---
 
-## ?? Mr. Wisdom – AI Chatbot  
+## ?? Mr. Wisdom ï¿½ AI Chatbot  
 **Tech Stack:** JavaScript, HTML/CSS, Google Firebase  
 **Role:** Frontend Developer & Firebase Integrator  
 - Built a context-aware chatbot interface that leverages rule-based logic and simulated NLP responses.  
