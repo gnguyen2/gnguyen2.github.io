@@ -24,7 +24,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52JVSGSZ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-# Portfolio
+
 
 Welcome to my portfolio, a curated selection of projects that reflect my passion for full-stack development, AI, and problem-solving in real-world scenarios.
 
