@@ -6,6 +6,14 @@
 # `jekyll serve -l -H localhost`. If you change this file, please restart the 
 # server process.
 
+nav:
+  - title: "Home"
+    url: /
+  - title: "CV"
+    url: /cv/
+  - title: "Portfolio"
+    url: /portfolio/
+
 # Basic Site Settings
 locale                   : "en-US"
 title                    : "Gia Nguyen"
