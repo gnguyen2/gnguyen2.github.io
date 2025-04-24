@@ -1,7 +1,6 @@
 ---
-title: "Porfolio"
-layout: archive
-category: manuscripts
+title: "Portfolio"
+layout: single
 author_profile: true
 permalink: /portfolio/
 ---
