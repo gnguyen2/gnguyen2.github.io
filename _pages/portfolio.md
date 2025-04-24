@@ -26,11 +26,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 # Portfolio
 
-Welcome to my portfolio � a curated selection of projects that reflect my passion for full-stack development, AI, and problem-solving in real-world scenarios.
+Welcome to my portfolio, a curated selection of projects that reflect my passion for full-stack development, AI, and problem-solving in real-world scenarios.
 
 ---
 
-## ?? Plant Disease Detection System  
+##  Plant Disease Detection System  
 **Tech Stack:** TensorFlow, Keras, Flask, Python, Docker, HTML/CSS, Git  
 **Role:** ML Engineer & Full-Stack Developer  
 - Trained a CNN using TensorFlow/Keras on an extensive dataset of plant leaf images to detect and classify multiple plant diseases.  
@@ -41,7 +41,7 @@ Welcome to my portfolio � a curated selection of projects that reflect my pass
 
 ---
 
-## ?? Postal Office Web Application  
+##  Postal Office Web Application  
 **Tech Stack:** JavaScript, Node.js, SQL, React  
 **Role:** Backend & Frontend Developer  
 - Designed and implemented a multi-role system for customers and employees to interact with package tracking and customer records.  
@@ -51,7 +51,7 @@ Welcome to my portfolio � a curated selection of projects that reflect my pass
 
 ---
 
-## ??? Chilliwack Academic Approval System  
+## Chilliwack Academic Approval System  
 **Tech Stack:** Flask, SQLAlchemy, MSAL, Microsoft Graph API, HTML/CSS, Jinja2, Docker  
 **Role:** System Architect & Full-Stack Developer  
 - Developed a secure login system using Microsoft Office 365 OAuth (MSAL) and Microsoft Graph API to authenticate users and fetch profile data.  
@@ -61,9 +61,22 @@ Welcome to my portfolio � a curated selection of projects that reflect my pass
 - Ensured persistent session tracking with Flask-Session and server-side file-based storage.  
 - Admin dashboard features include role management, session validation, and future approval routing integration.
 
+## Demo Video
+
+Here's a quick demo of the project in action:
+
+<div align="center">
+  <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/PkIRe9yX56g" 
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
+
 ---
 
-## ?? Mr. Wisdom � AI Chatbot  
+## Mr. Wisdom � AI Chatbot  
 **Tech Stack:** JavaScript, HTML/CSS, Google Firebase  
 **Role:** Frontend Developer & Firebase Integrator  
 - Built a context-aware chatbot interface that leverages rule-based logic and simulated NLP responses.  
@@ -72,7 +85,7 @@ Welcome to my portfolio � a curated selection of projects that reflect my pass
 
 ---
 
-## ?? U.S. Medical Insurance Cost Analysis  
+## U.S. Medical Insurance Cost Analysis  
 **Tech Stack:** Python, Matplotlib, Jupyter Notebook  
 **Role:** Data Analyst  
 - Cleaned and processed real-world health insurance data to analyze patterns in medical charges.  
@@ -82,9 +95,9 @@ Welcome to my portfolio � a curated selection of projects that reflect my pass
 
 ---
 
-## ? Let's Connect  
+##  Let's Connect  
 Want to collaborate, chat tech, or learn more about my work?
 
-?? [giaba6a2@gmail.com](mailto:giaba6a2@gmail.com)  
-?? [LinkedIn](https://www.linkedin.com/in/gia-nguyen-053594246)  
-?? [GitHub](https://github.com/gnguyen2)
+ [giaba6a2@gmail.com](mailto:giaba6a2@gmail.com)  
+ [LinkedIn](https://www.linkedin.com/in/gia-nguyen-053594246)  
+ [GitHub](https://github.com/gnguyen2)
