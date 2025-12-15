@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gia Nguyen - Developer & AI Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --text-light: #666;
+            --accent: #2a2a2a;
+            --border: #e8e8e8;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            color: var(--text-light);
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            margin-bottom: 3rem;
+        }
+
+        .scroll-indicator {
+            margin-top: 4rem;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-light);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+        }
+
+        /* Section Styling */
+        section {
+            padding: 8rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 300;
+            letter-spacing: -0.01em;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        /* About Section */
+        .about-content {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            line-height: 2;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+
+        .skill-tag {
+            padding: 0.5rem 1.2rem;
+            border: 1px solid var(--border);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            color: var(--text-light);
+            transition: all 0.3s;
+        }
+
+        .skill-tag:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            gap: 6rem;
+            margin-top: 4rem;
+        }
+
+        .project {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .project:nth-child(even) .project-info {
+            order: 2;
+        }
+
+        .project-info h3 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        .project-info .tech-stack {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            letter-spacing: 0.05em;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-info p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .project-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            padding-bottom: 0.2rem;
+            border-bottom: 1px solid var(--text);
+            transition: opacity 0.3s;
+        }
+
+        .project-links a:hover {
+            opacity: 0.6;
+        }
+
+        .project-image {
+            aspect-ratio: 16/10;
+            background: var(--border);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Contact Section */
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-content p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 1.2rem;
+            letter-spacing: 0.02em;
+            transition: opacity 0.3s;
+        }
+
+        .contact-links a:hover {
+            opacity: 0.6;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 3rem 2rem;
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1.5rem;
+                font-size: 0.8rem;
+            }
+
+            section {
+                padding: 4rem 1.5rem;
+            }
+
+            .project {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .project:nth-child(even) .project-info {
+                order: 1;
+            }
+
+            .skills {
+                gap: 0.7rem;
+            }
+        }
+
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">Gia Nguyen</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Building intelligent systems, one line at a time</h1>
+            <p class="subtitle">Computer Science student at the University of Houston, specializing in software development and artificial intelligence</p>
+            <div class="scroll-indicator">Scroll to explore</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About</h2>
+        <div class="about-content">
+            <p>I'm Gia Nguyen, a Computer Science student at the University of Houston, graduating in May 2026. I specialize in creating intelligent, scalable systems that solve real-world problems.</p>
+            <p>Currently working as a Technology Assistant at UH's Honors College, where I configure systems and implement security solutions. Previously, I served as a Student Technician at Lamar University's Computer Science Department.</p>
+            
+            <div class="skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">PostgreSQL</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="work">
+        <h2 class="section-title">Selected Work</h2>
+        <div class="projects-grid">
+            
+            <!-- Project 1 -->
+            <div class="project">
+                <div class="project-info">
+                    <h3>Plant Disease Detection System</h3>
+                    <div class="tech-stack">TensorFlow · Keras · Flask · Docker</div>
+                    <p>Built a CNN-powered web application that detects and classifies plant diseases in real-time. Trained on extensive leaf image datasets with data augmentation to prevent overfitting, achieving high accuracy in disease identification.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/gnguyen2" target="_blank">View on GitHub →</a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    Project Demo
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <div class="project-info">
+                    <h3>Chilliwack Academic Approval System</h3>
+                    <div class="tech-stack">Flask · SQLAlchemy · Microsoft Graph API · Docker</div>
+                    <p>Developed a secure authentication system using Microsoft OAuth and Graph API. Implemented role-based access control with admin dashboards for user management and session tracking.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/gnguyen2" target="_blank">View on GitHub →</a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    Project Demo
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project">
+                <div class="project-info">
+                    <h3>Postal Office Web Application</h3>
+                    <div class="tech-stack">React · Node.js · SQL</div>
+                    <p>Designed a multi-role system for package tracking and customer management. Built RESTful APIs in Node.js and dynamic React components for real-time tracking and record management.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/gnguyen2" target="_blank">View on GitHub →</a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    Project Demo
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project">
+                <div class="project-info">
+                    <h3>U.S. Medical Insurance Analysis</h3>
+                    <div class="tech-stack">Python · Matplotlib · Jupyter</div>
+                    <p>Analyzed healthcare cost patterns using real-world insurance data. Visualized correlations between age, BMI, smoking status, and medical charges to uncover meaningful insights.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/gnguyen2" target="_blank">View on GitHub →</a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    Project Demo
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-content">
+            <p>I'm always interested in collaborating on innovative projects or discussing new ideas. Feel free to reach out.</p>
+            <div class="contact-links">
+                <a href="mailto:giabao6a2@gmail.com">giabao6a2@gmail.com</a>
+                <a href="https://linkedin.com/in/gia-nguyen-053594246" target="_blank">LinkedIn</a>
+                <a href="https://github.com/gnguyen2" target="_blank">GitHub</a>
+                <a href="files/GiaNguyenResume.pdf" target="_blank">Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Gia Nguyen · Houston, TX</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
